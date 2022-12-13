@@ -25,7 +25,7 @@ public class CarService {
     }
 
     @Transactional
-    public CarDto addCar(CarDto carDto) {
+    public CarDto saveCar(CarDto carDto) {
         return carConverter.toDto(carRepository.save(carConverter.toEntity(carDto)));
     }
 
