@@ -25,7 +25,7 @@ public class CarController {
     @PostMapping
 //    @PreAuthorize("hasAuthority('ADMIN')")
     public CarDto addCar(@RequestBody CarDto carDto) {
-        return carService.addCar(carDto);
+        return carService.saveCar(carDto);
     }
 
     @PutMapping(path = "/{id}")
